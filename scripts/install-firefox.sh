@@ -40,7 +40,7 @@ Darwin)
   rm target.dmg
   ;;
 Linux)
-  tar jxf target.tar.xz
+  tar Jxf target.tar.xz
   rm -rf firefox-bin
   mv firefox firefox-bin
   rm target.tar.xz
