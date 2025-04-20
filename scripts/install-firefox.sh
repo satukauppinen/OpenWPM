@@ -20,7 +20,7 @@ Darwin)
 Linux)
   echo 'Installing for Linux'
   OS='linux'
-  TARGET_SUFFIX='.tar.bz2'
+  TARGET_SUFFIX='.tar.xz'
   ;;
 *)
   echo 'Your OS is not supported. Aborting'
@@ -40,10 +40,10 @@ Darwin)
   rm target.dmg
   ;;
 Linux)
-  tar jxf target.tar.bz2
+  tar jxf target.tar.xz
   rm -rf firefox-bin
   mv firefox firefox-bin
-  rm target.tar.bz2
+  rm target.tar.xz
   ;;
 esac
 
