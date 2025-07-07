@@ -1,9 +1,1 @@
-#!/bin/bash
-
-python -m pytest --cov=openwpm --junit-xml=junit-report.xml --cov-report=xml $TESTS -s -v --durations=10;
-exit_code=$?;
-if [[ "$exit_code" -ne 0 ]]; then
-    exit $exit_code;
-fi
-codecov -f coverage.xml;
-
+#!/bin/bashpython -m pytest --cov=openwpm --junit-xml=junit-report.xml --cov-report=xml $TESTS -s -v --durations=10;exit_code=$?;if [[ "$exit_code" -ne 0 ]]; then    exit $exit_code;ficodecov -f coverage.xml;
